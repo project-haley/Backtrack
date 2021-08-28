@@ -59,35 +59,30 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col-lg-4 col">
-                        <h1>Hopskip Hundred: A Coding Project</h1>
-                        <h4 class="lead">Really feel the evens.</h4>
+                        <h1>Backtrack: A Coding Project</h1>
+                        <h4 class="lead">> Bring to Front</h4>
                         <h2 class="mt-5 border-bottom border-2">Instructions</h2>
-                        <p>Enter a starting value and an ending value.  Press the button and the values will appear.</p>
+                        <p>Enter any set of characters you like.  Hit the button, and I will reverse it.</p>
                     </div>
-                    <div class="col-lg-8 col">
-                        <h5>Enter Values</h5>
 
-                        <form class="row row-cols-2 gy-2 gx-3">
-                            <div class="col">
-                                <input id="startValue" type="number" class="form-control" placeholder="Start Value" value="0" aria-label="Start Value">
+                    <div class="col-lg-8 col">
+                        <form>
+                            <div>
+                                <input id="targetString" type="string" class="form-control" placeholder="Text Here" aria-label="Text Here">
                             </div>
-                            <div class="col">
-                                <input id="endValue" type="number" class="form-control" placeholder="End Value" value="100" aria-label="End Value">
-                            </div>
-                            <div class="col-12 d-flex justify-content-end">
-                                <button id="btnSubmit" type="button" class="btn btn-outline-dark btn-lg">Go!</button>
+                            <div>
+                                <button id="btnSubmit" type="button" class="btn-btn-outline-dark btn-lg">Go!</button>
                             </div>
                         </form>
-
-                        <h2 class="mt-5 border-bottom border-2">Results</h2>
-                        <div class="table-responsive">
-                            <table class="table table-striped bg-light">
-                                <tbody id="results">
-                                    <!-- JS -->
-                                </tbody>
-                            </table>
+                        <div>
+                            <h5 id="results">
+                                <!-- JS -->
+                            </h5>
                         </div>
                     </div>
+
+
+
                 </div>
             </div>
         </main>
@@ -125,7 +120,7 @@
         </script>
         <script src="/js/site.js"></script>
         <script>
-            document.getElementById("btnSubmit").addEventListener("click", generateTable);
+            document.getElementById("btnSubmit").addEventListener("click", printReverseString);
         </script>
 
     </body>
